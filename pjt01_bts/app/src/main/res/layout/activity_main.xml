@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_001"
+            android:src="@drawable/azure"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/image_002"
+            android:src="@drawable/c_sharp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/cloudstone"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/git"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/javascript"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/python"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/thumb"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageView
+            android:src="@drawable/typescript"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

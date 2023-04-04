@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    // Room 데이터베이스를 사용하기 위한 플러그인
+    // 어노테이션 작성 - 어노테이션 : 소스코드에 추가해서 사용할 수 있는 메타 데이터의 일종, 사전적 의미로는 '주석'을 뜻함
+    id 'kotlin-kapt'
 }
 
 android {
@@ -30,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -41,4 +49,13 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Room 데이터베이스
+    implementation 'androidx.room:room-runtime:2.3.0'
+    kapt 'androidx.room:room-compiler:2.3.0'
+    implementation 'androidx.room:room-ktx:2.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines'
+
+    // viewModel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
 }
